@@ -27,11 +27,11 @@ function beginning(begin){
         //ending();
     } else if (start === "Y" || start === "y"){
         //fishList();
-        console.log(fishList());
+        //console.log(fishList());
 
         let exitLoop = false;
         while (count < 6){
-            //let thisFish = fishArray[count];
+
             console.log("\n=================================================\n");
             console.log(`The time is ${count + 6}:00am. So far you've caught:\n`);
             console.log(`${bucket.length} fish, ${totalWeight} lbs, $${totalValue} \n`);
