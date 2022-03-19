@@ -19,14 +19,14 @@ console.log("=================================================\n");
 
 
 
-function beginning(begin){
+function beginning(){
     console.log("Do you want to start fishing?\n");
     let start = prompt("[Y]es or [N]o >"); 
 
     if (start === "N" || start === "n"){
         //ending();
     } else if (start === "Y" || start === "y"){
-        //fishList();
+        fishList();
         //console.log(fishList());
 
         let exitLoop = false;
@@ -39,7 +39,7 @@ function beginning(begin){
 
             goFishing();
 
-            function goFishing(choice){
+            function goFishing(){
                 let ans = prompt("Go fishing? [Y]es or [N]o >");
 
                 if (ans === "N" || ans === "n"){
@@ -77,7 +77,6 @@ function beginning(begin){
         beginning();
     }
     
-    return begin
 }
 
 beginning();
